@@ -1,0 +1,59 @@
+﻿@import "colors-definition";
+
+/* Layout (Torrents page) */
+
+/* Base styles pour les liens show/hide */
+.hide_torrents_link,
+.show_torrents_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 25px;
+  font-size: 14px;
+  color: @color-9A9A9A;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  text-shadow: 0 0 transparent;
+}
+
+/* Style pour l'état show (flèche vers la droite) */
+.show_torrents_link {
+  position: relative;
+}
+
+.show_torrents_link:after {
+  content: "▶";
+  display: block;
+}
+
+/* Style pour l'état hide (flèche vers le bas) */
+.hide_torrents_link {
+  position: relative;
+}
+
+.hide_torrents_link:after {
+  content: "▼";
+  display: block;
+}
+
+/* Hover effects */
+.hide_torrents_link:hover,
+.show_torrents_link:hover {
+  color: #333333;
+}
+
+/* Support pour les anciennes classes tout en utilisant les nouvelles flèches */
+.show_torrents > a:after {
+  content: "▶";
+}
+.hide_torrents > a:after {
+  content: "▼";
+}
+
+.team_name {
+  background-color: rgba(100, 100, 100, 0.15);
+  color: #a8a8a8;
+  padding: 2px;
+  float: none !important;
+}
