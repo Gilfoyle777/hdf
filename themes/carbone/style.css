@@ -17,6 +17,7 @@
   Made exclusively for use on What.CD in 2012.
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
 * {
   margin: 0;
   padding: 0;
@@ -55,46 +56,46 @@ li {
 
 /* USER CLASSES*/
 .class_2{
-	color: #444;
+  color: #444;
 }
 .class_3{
-	color: #96ca2d;
+  color: #96ca2d;
 }
 .class_5{
-	color: #93c47d;
+  color: #93c47d;
 }
 .class_28{
-	color: #0000ff;
+  color: rgba(0, 0, 255, 0.75);
 }
 .class_11{
-	color: #1e84cc;
+  color: #1e84cc;
 }
 .class_15{
-	color: #ff0000;
+  color: rgba(255, 0, 0, 0.75);
 }
 .class_1{
-	color: #980000;
+  color: #980000;
 }
 .class_23{
-	color: #D400FF;
+  color: rgba(212, 0, 255, 0.75);
 }
 .class_22{
-	color: #38761d;
+  color: #38761d;
 }
 .class_20{
-	color: #11ED95;
+  color: rgba(17, 237, 149, 0.75);
 }
 .class_29{
-	color: #853894;
+  color: #853894;
 }
 .class_30{
-	color: #FF321D;
+  color: rgba(255, 50, 29, 0.75);
 }
 .class_33{
-	color: #DAA520;
-}	
+  color: #DAA520;
+}
 .class_32{
-	color: #F0E68C;
+  color: #F0E68C;
 }
 
 a, .linkbox a:hover {
@@ -112,89 +113,28 @@ a img, #collage .search_form td, #requests .search_form td, #reportsv2 #reportfo
 
 .add_bookmark a, .big_info .add_bookmark.brackets, .bookmark a.add_bookmark {
   display: block;
-  padding: 5px 0px;
+  padding: 5px 0;
   width: 10px;
   height: 30px;
-  background: url('https://dev.questionable.host/css/red/darkmonoalt/st.png') -145px -10px;
-  font-size: 0px;
+  font-size: 0;
   cursor: pointer;
   position: relative;
 }
 
 .remove_bookmark a, .big_info .remove_bookmark.brackets, .bookmark a.remove_bookmark {
   display: block;
-  padding: 5px 0px;
+  padding: 5px 0;
   width: 10px;
   height: 30px;
-  background: url('https://dev.questionable.host/css/red/darkmonoalt/st.png') -89px -100px;
-  font-size: 0px;
+  font-size: 0;
   cursor: pointer;
   position: relative;
 }
 
-/*
-a.upvote, a.small_upvote {
-    display: inline-block;
-    overflow: hidden;
-    width: 16px;
-    height: 14px;
-    background: url('https://redacted.ch/static/styles/postmod/images/notifications.png') no-repeat top left;
-    background-position: 0px -62px;
-    text-indent: 100%;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-a.upvote:hover, a.small_upvote:hover {
-    display: inline-block;
-    overflow: hidden;
-    width: 16px;
-    height: 14px;
-    background: url('https://redacted.ch/static/styles/postmod/images/notifications.png') no-repeat top left;
-    background-position: -16px -62px;
-}
-
-a.downvote, a.small_downvote {
-    display: inline-block;
-    overflow: hidden;
-    width: 16px;
-    height: 14px;
-    background: url('https://redacted.ch/static/styles/postmod/images/notifications.png') no-repeat top left;
-    background-position: 0px -76px;
-    text-indent: 100%;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-a.downvote:hover, a.small_downvote:hover {
-    display: inline-block;
-    overflow: hidden;
-    width: 16px;
-    height: 14px;
-    background: url('https://redacted.ch/static/styles/postmod/images/notifications.png') no-repeat top left;
-    background-position: -16px -76px;
-}
-
-a.small_clearvote {
-    display: inline-block;
-    overflow: hidden;
-    width: 16px;
-    height: 14px;
-    background: url('https://redacted.ch/static/styles/postmod/images/notifications.png') no-repeat top left;
-    background-position: 0px -91px;
-    text-indent: 100%;
-    white-space: nowrap;
-    cursor: pointer;
-}
-*/
 a.new-subscriptions {
   padding: 6px 5px 5px !important;
   margin-right: 5px;
   background-color: rgba(42, 68, 93, 0.1);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 68, 93, 0.1)), to(rgba(76, 123, 167, 0.5)));
-  background-image: -webkit-linear-gradient(top, rgba(42, 68, 93, 0.1), rgba(76, 123, 167, 0.5));
-  background-image: -moz-linear-gradient(top, rgba(42, 68, 93, 0.1), rgba(76, 123, 167, 0.5));
-  background-image: -o-linear-gradient(top, rgba(42, 68, 93, 0.1), rgba(76, 123, 167, 0.5));
   background-image: linear-gradient(to bottom, rgba(42, 68, 93, 0.1), rgba(76, 123, 167, 0.5));
   color: #888;
 }
@@ -207,15 +147,12 @@ a.hide_torrents_link {
   display: block;
   width: 23px;
   height: 25px;
-  background: url("https://raw.githubusercontent.com/WhatCD/Gazelle/master/static/styles/mono/icons/show-hide.png") no-repeat;
-  background-position: 0px -25px;
 }
 
 a.show_torrents_link {
   display: block;
   width: 23px;
   height: 25px;
-  background: url("https://raw.githubusercontent.com/WhatCD/Gazelle/master/static/styles/mono/icons/show-hide.png") no-repeat;
 }
 
 h1, h2, h3 {
@@ -254,69 +191,6 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   text-align: right;
 }
 
-#artist .merge_form div[style="text-align: center;"] {
-  text-align: left !important;
-}
-
-#artist .merge_form div[style="text-align: center;"] label:first-child {
-  margin-left: 50px;
-}
-
-#artist .merge_form div[style="text-align: center;"] label {
-  margin-left: 29px;
-}
-
-#artist .merge_form div[style="text-align: center;"] strong {
-  margin-left: 72px;
-}
-
-#artist .merge_form div[style="text-align: center;"] input[type="submit"] {
-  margin-left: 444px;
-}
-
-#artist .add_form input[value="Add alias"] {
-  margin-top: 10px;
-  margin-left: 463px;
-}
-
-#artist .merge_form input#newartistid, #artist .merge_form input#newartistname {
-  width: 87%;
-}
-
-#artistcomplete, #torrentscomplete {
-  position: absolute !important;
-  z-index: 2;
-  display: block !important;
-  overflow: hidden;
-  width: 152px !important;
-  background: rgba(20, 20, 20, 0.8);
-  text-align: left;
-}
-
-#artistcomplete > li {
-  display: block;
-  padding: 5px 5px !important;
-  width: 100% !important;
-  cursor: pointer;
-}
-
-#artistcomplete li.highlight {
-  margin-right: 0;
-  background-color: rgba(100, 100, 100, 0.55);
-}
-
-#artistfields input#artist, #title_tr input#title, #label_tr input#record_label, #catalogue_tr input#catalogue_number, #upload_table.create_form input#image, #edition_title input#remaster_title, #edition_record_label input#remaster_record_label, #edition_catalogue_number input#remaster_catalogue_number, .yadg_tr input#yadg_input, #upload_table.create_form input#title {
-  width: 350px;
-}
-
-#artist_list .remove.remove_artist, #info.head a:last-child, #concerts.head a:last-child, .box.box_info.pad ul ul li a:nth-child(2), .box.box_info.pad ul ul li a:nth-child(3), a#flip_to, #torrents .submit input[value="Filter Torrents"], .group_torrent td span, .votespan {
-  float: right;
-}
-
-#artist_name.ftr_advanced td, #search_terms.ftr_basic td {
-  padding-top: 0;
-}
-
 #better .search_form input[size="60"] {
   width: 500px;
 }
@@ -335,7 +209,6 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #bookmarks .search_form .layout.border, #bookmarks .search_form .layout.cat_list {
   margin: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -347,7 +220,6 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   margin-bottom: 20px;
   border: none;
   background: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -363,9 +235,6 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   border: 2px solid #5fa296;
   opacity: 1;
   transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
 }
 
 #collage .search_form .layout.border tr:nth-child(3) td:nth-child(2) label, tr#release_list td label, tr#format_list td label, tr#bitrate_list td label, tr#media_list td label {
@@ -403,7 +272,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #content {
   overflow: hidden;
-  margin: 150px auto 50px !important;
+  margin: 150px auto 0 !important;
   width: 1000px;
   line-height: 1.4em;
 }
@@ -414,9 +283,9 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #content, .thin {
-padding-top: 20px;
-clear: both;
-overflow: hidden;
+  padding-top: 20px;
+  clear: both;
+  overflow: hidden;
 }
 
 #content .sidebar {
@@ -437,18 +306,12 @@ overflow: hidden;
   padding: 2px!important;
 }
 
-
 #coverart.box ul.collage_images img:hover, .group_image.float_left.clear img:hover, .gm_albumartdisplay img:hover, #collage_table td img:hover, #userhistory .torrent_table.grouped.artwork tr.group.discog td[style="width: 60px; padding: 0;"] img:hover, #user .layout.recent a > img:hover {
   border: 2px solid #528BA3 !important;
   opacity: 1 !important;
   transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
-  padding: 0px!important;
+  padding: 0!important;
 }
-
-
 
 #debug_database pre, #debug_report pre {
   white-space: pre-wrap;
@@ -544,13 +407,13 @@ overflow: hidden;
 }
 
 #recwars #wrapper #content .thin form .box.pad{
-margin: 10px;
-padding: 10px;
-border: 1px solid #333;
--webkit-border-radius: 3px;
--moz-border-radius: 3px;
-border-radius: 3px;
-background-color: rgba(80, 80, 80, 0.3);
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(80, 80, 80, 0.3);
 }
 
 #poll .box.border {background-color: rgba(100, 100, 100, 0.15); min-width: 55%;}
@@ -567,7 +430,6 @@ background-color: rgba(80, 80, 80, 0.3);
 
 
 .filter_torrents {
-
   margin-bottom: 15px !important;
   padding: 10px !important;
   background-color: rgba(100, 100, 100, 0.15);
@@ -719,7 +581,7 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #logchecker blockquote h2 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #logo a {
@@ -727,7 +589,7 @@ background-color: rgba(80, 80, 80, 0.3);
   top: 0;
   left: 0;
   z-index: 5;
-  margin: 0px 0 0 50px;
+  margin: 0 0 0 50px;
   /* margin: 8px 0 0 50px; */
   padding: 0;
   width: 113px;
@@ -784,6 +646,15 @@ background-color: rgba(80, 80, 80, 0.3);
   height: 15px;
 }
 
+#nav_userinfo{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 48%;
+  display: block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
 /*
 #nav_useredit, #nav_logout, #nav_invite, #nav_donate, #nav_store {
     opacity: 0;
@@ -835,7 +706,6 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #requests .thin div:nth-child(3) form table:nth-child(6) td {
-  padding: 13px 0 0 0 !important;
   padding-top: 13px !important;
   border-bottom: 0 !important;
 }
@@ -866,7 +736,6 @@ background-color: rgba(80, 80, 80, 0.3);
   margin-left: 14%;
   width: 675px;
   height: 275px;
-  background: url("https://redacted.ch/static/styles/postmod/images/trump.png") no-repeat !important;
 }
 
 #rules span#Index {
@@ -875,11 +744,9 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #rules .ratio_table {
-  margin: 10px 0;
-  margin-left: 250px;
+  margin: 10px 0 10px 250px;
   width: 500px;
   background: rgba(50, 50, 50, 0.4);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -1022,19 +889,9 @@ background-color: rgba(80, 80, 80, 0.3);
   width: 20px;
 }
 
-#discog_table tr.discog:hover img, .torrent_table.cats.numbering.border tr.torrent:hover img {
-  border: 2px solid #528BA3 !important;
-  opacity: 1 !important;
-  transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
-  padding: 0px!important;
-}
 #torrent_table tr.group:hover {
-  padding: 0px!important;
+  padding: 0!important;
 }
-
 
 /* Hover opacity for artwork in torrent lists */
 #torrents .submit input[value="Reset"] {
@@ -1111,7 +968,11 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #userinfo {
-  overflow: hidden;
+//overflow: hidden;
+//width: 100%;
+
+  position: absolute;
+  top: -5px;
   width: 100%;
 }
 
@@ -1121,14 +982,13 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #userinfo_username {
-  position: static !important;
+  position: absolute;
   left: 0;
-  float: left !important;
-  overflow: hidden;
-  margin: 62px 0 0 50px;
+  margin: 60px 0 0 50px;
   height: 1.5em !important;
   text-align: left;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
+  width: 50%;
 }
 
 #userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li, #searchbars, #menu li {
@@ -1141,25 +1001,18 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #userinfo_major {
-  position: static !important;
+  position: absolute;
+  width: 50%;
+  margin: 105px 0 0 50px;
   left: 0;
-  z-index: 20;
-  float: left !important;
-  overflow: hidden;
-  margin: 62px 0 0 5px;
-  height: 1.5em !important;
-  text-align: left;
-  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
 }
 
 #userinfo_stats {
-  opacity: 0.8;
-  left: 0;
-  z-index: 1;
-  margin: 90px 0 0 50px;
-  text-align: right;
+  margin: 85px 0 0 50px;
+  position: absolute;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-size: 12px;
+  width: 50%;
 }
 
 #userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #searchbars li, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
@@ -1167,8 +1020,21 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #userinfo_minor {
+  position: absolute;
+  width: 48%;
   right: 0;
-  margin: 62px 50px 0 0;
+  margin: 60px 55px 0 0;
+  text-align: right;
+  float: right;
+}
+
+#userinfo_minor li {
+  padding-right: 0;
+}
+
+#userinfo_minor li:last-child{
+  margin-right: 0;
+  padding-right: 0;
 }
 
 #userinfo_minor li, #userinfo_major li {
@@ -1180,7 +1046,7 @@ background-color: rgba(80, 80, 80, 0.3);
 }
 
 #userinfo_minor a, #userinfo_username a, #userinfo_major a, #menu a:hover, #userinfo_stats a:hover {
-  padding: 2px 0px;
+  padding: 2px 0;
   /*color: #9A9A9A;*/
   color: #666;
 }
@@ -1405,8 +1271,7 @@ span.small_upvoted {
   overflow: hidden;
   width: 16px;
   height: 14px;
-  background: url("https://redacted.ch/static/styles/postmod/images/notifications.png") no-repeat top left;
-  background-position: 0px -62px;
+  background-position: 0 -62px;
   text-indent: 100%;
   white-space: nowrap;
   cursor: pointer;
@@ -1417,8 +1282,7 @@ span.small_downvoted {
   overflow: hidden;
   width: 16px;
   height: 14px;
-  background: url("https://redacted.ch/static/styles/postmod/images/notifications.png") no-repeat top left;
-  background-position: 0px -76px;
+  background-position: 0 -76px;
   text-indent: 100%;
   white-space: nowrap;
   cursor: pointer;
@@ -1429,8 +1293,7 @@ span.last_read a {
   margin: 0 0 0 5px;
   width: 20px;
   height: 20px;
-  background: url("https://raw.githubusercontent.com/WhatCD/Gazelle/master/static/styles/mono/icons/goto.png") no-repeat center;
-  background-position: bottom;
+  background: url("https://raw.githubusercontent.com/WhatCD/Gazelle/master/static/styles/mono/icons/goto.png") no-repeat bottom;
   background-size: 100%;
   opacity: 0.5;
 }
@@ -1459,21 +1322,19 @@ input[type="checkbox"] {
   border: 1px solid #3b3b3b;
   background: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
 input[type="checkbox"]:active, input[type="checkbox"]:checked:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 input[type="checkbox"]:checked {
   border: 1px solid #3b3b3b;
   background: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   color: #3b3b3b;
 }
@@ -1496,7 +1357,6 @@ input[type="radio"] {
   border-radius: 50px;
   background: rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   -webkit-appearance: none;
 }
@@ -1509,22 +1369,20 @@ input[type="radio"]:checked:after {
   height: 6px;
   border-radius: 50px;
   background: #456478;
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
   content: ' ';
-  text-shadow: 0;
+  text-shadow: 0 0 black;
 }
 
 input[type="radio"]:checked {
   border: 1px solid #3b3b3b;
   background: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   color: #456478;
 }
 
 input[type="radio"]:active, input[type="radio"]:checked:active {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 input[type="submit"], input[type="button"], button[type="button"], #upload #whmf_offer button, button#send_recommendation, button {
@@ -1532,22 +1390,15 @@ input[type="submit"], input[type="button"], button[type="button"], #upload #whmf
   padding: 5px 10px;
   border: 1px solid #3b3b3b;
   background-color: #707070;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#181818));
-  background-image: -webkit-linear-gradient(top, #333333, #181818);
-  background-image: -moz-linear-gradient(top, #333333, #181818);
-  background-image: -o-linear-gradient(top, #333333, #181818);
-  background-image: linear-gradient(top bottom, #333333, #181818);
+  background-image: linear-gradient(to bottom, #333333, #181818);
   color: #8b8b8b;
   text-decoration: none;
-  text-shadow: 1px 1px 0px #333333;
+  text-shadow: 1px 1px 0 #333333;
   font-weight: bold;
 }
 
 input[type="submit"]:active, input[type="button"]:active, button[type="button"]:active, button#send_recommendation:active {
   background-color: #333333;
-  background-image: -webkit-linear-gradient(top, #181818, #333333);
-  background-image: -moz-linear-gradient(top, #181818, #333333);
-  background-image: -o-linear-gradient(top, #181818, #333333);
   background-image: linear-gradient(to bottom, #181818, #333333);
 }
 
@@ -1555,9 +1406,6 @@ input:focus, textarea:focus {
   outline: 0 !important;
   border: 1px solid #456478 !important;
   transition: .25s ease-in-out;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
 }
 
 input[value="Make Default"] {
@@ -1606,15 +1454,9 @@ tr:last-child td, tr.group:last-child td {
 }
 
 td.colhead {
-  margin: -11px;
-  margin-bottom: 10px;
+  margin: -11px -11px 10px;
   padding: 8px !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#333333), to(#444444));
-  background-image: -webkit-linear-gradient(top, #333333, #444444);
-  background-image: -moz-linear-gradient(top, #333333, #444444);
-  background-image: -o-linear-gradient(top, #333333, #444444);
-  background-image: linear-gradient(top bottom, #333333, #444444);
-  -webkit-box-shadow: inset 0 1px 0 rgba(25, 25, 25, 0.4);
+  background-image: linear-gradient(to bottom, #333333, #444444);
   box-shadow: inset 0 1px 0 rgba(25, 25, 25, 0.4);
   color: #888 !important;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
@@ -1687,9 +1529,8 @@ ul.nobullet {
 }
 
 li.graph {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin: 2px 0px 10px 16px;
+  box-sizing: border-box;
+  margin: 2px 0 10px 16px;
   padding: 3px;
   width: 80%;
   height: 15px;
@@ -1701,7 +1542,6 @@ li.graph .center_poll {
   height: 7px;
   border: 1px solid #456478;
   background: #528ba3;
-  -webkit-box-shadow: inset 0 -1px 1px #456478;
   box-shadow: inset 0 -1px 1px #456478;
 }
 
@@ -1725,7 +1565,6 @@ li.graph .center_poll {
 
 .autocomplete-suggestions {
   background-color: rgba(32, 32, 32, 0.85);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #3B3B3B;
 }
@@ -1750,7 +1589,6 @@ li.graph .center_poll {
   height: 20px;
   border: 1px solid #1D1D1D !important;
   background-color: rgba(100, 100, 100, 0.6) !important;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset -1px 1px 0 rgba(255, 255, 255, 0.12);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset -1px 1px 0 rgba(255, 255, 255, 0.12);
   color: #999 !important;
   text-shadow: none !important;
@@ -1783,12 +1621,11 @@ li.graph .center_poll {
   margin-bottom: 10px !important;
   padding: 10px !important;
   background-color: rgba(100, 100, 100, 0.15);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   color: #9A9A9A;
 }
 
-.cats_col, .group.discog td.center:nth-child(2) {
+.cats_col td.center:nth-child(2) {
   width: 25px;
 }
 
@@ -1854,7 +1691,6 @@ li.graph .center_poll {
 .filter_torrents .cat_list[width="100%"] {
   border: none;
   background-color: transparent;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -1904,11 +1740,7 @@ li.graph .center_poll {
 }
 
 .forum_unread tr.colhead_dark td {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#361c34), to(#191919)) !important;
-  background-image: -webkit-linear-gradient(top, #361c34, #191919) !important;
-  background-image: -moz-linear-gradient(top, #361c34, #191919) !important;
-  background-image: -o-linear-gradient(top, #361c34, #191919) !important;
-  background-image: linear-gradient(top bottom, #361c34, #191919) !important;
+  background-image: linear-gradient(to bottom, #361c34, #191919) !important;
 }
 
 .friends_table textarea[cols="80"] {
@@ -1932,13 +1764,8 @@ li.graph .center_poll {
 }
 
 .head, .colhead td, .colhead th, .recent .colhead td, .colhead_dark td, tr.colhead{
-  margin: -10px;
-  margin-bottom: 10px;
+  margin: -10px -10px 10px;
   padding: 8px 10px !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(#191919));
-  background-image: -webkit-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -moz-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -o-linear-gradient(top, #1d1d1d, #191919);
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: bold;
@@ -1950,7 +1777,7 @@ li.graph .center_poll {
 }
 
 .important_user .body {
-  background: url("https://redacted.ch/static/styles/postmod/images/op.png") no-repeat bottom right !important;
+
 }
 
 .important_text_alt {
@@ -1987,17 +1814,13 @@ li.graph .center_poll {
 }
 
 .brackets:before {
-  content: "[";
+  content: "["!important;
   color: #444;
 }
 
 .brackets:after {
-  content: "]";
+  content: "]"!important;
   color: #444;
-}
-
-.nobr {
-  white-space: nowrap;
 }
 
 .permission_container {
@@ -2006,7 +1829,7 @@ li.graph .center_poll {
 }
 
 .permission_container:nth-child(2) {
-  padding: 0px 2%;
+  padding: 0 2%;
 }
 
 .pressed {
@@ -2014,7 +1837,6 @@ li.graph .center_poll {
   width: 20px;
   height: 20px;
   background-color: rgba(100, 100, 100, 0.8) !important;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset -1px 1px 0 rgba(255, 255, 255, 0.12);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), inset -1px 1px 0 rgba(255, 255, 255, 0.12);
   color: #eee !important;
   text-shadow: none !important;
@@ -2128,30 +1950,8 @@ li.graph .center_poll {
   padding-left: 4px;
 }
 
-/*
-.snatched_group img, .snatched_torrent img {
-    filter: url("data: image/svg+xml;
-    utf8,<svg xmlns='http: //www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-    filter: gray;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -moz-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
-    -o-filter: grayscale(100%);
-    -webkit-filter: grayscale(1);
-}
-
-.snatched_group:hover img, .snatched_torrent:hover img {
-    filter: none;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    border: 2px solid #528BA3 !important;
-}
-*/
 .sticky_post .body {
-  background: url("https://redacted.ch/static/styles/postmod/images/sticky.png") no-repeat bottom right !important;
+
 }
 
 .tags {
@@ -2245,10 +2045,6 @@ li.graph .center_poll {
   height: auto;
   width: 117px;
 }
-/*
-.group_image.float_left.clear img, #userhistory .torrent_table.grouped.artwork tr.group.discog td[style="width: 60px; padding: 0;"] img, #user .layout.recent a > img {
-  border: 2px solid #3b3b3b !important;
-}*/
 
 .gm_albumartdisplay {
   width: 90px !important;
@@ -2258,10 +2054,6 @@ li.graph .center_poll {
 .gm_albumartdisplay img {
   width: 75px !important;
   height: 75px !important;
-}
-
-.gm_albumartdisplay_loading {
-  background: transparent url("https://redacted.ch/static/styles/postmod/images/progress.gif") no-repeat center center !important;
 }
 
 .gm_albumartdisplay img, #userhistory .torrent_table.grouped.artwork tr.group.discog td[style="width: 60px; padding: 0;"] img, #user .layout.recent a > img {
@@ -2298,9 +2090,6 @@ li.graph .center_poll {
   border: 2px solid #528BA3;
   opacity: 1;
   transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -o-transition: opacity .25s ease-in-out;
 }
 
 /* Tooltips */
@@ -2309,8 +2098,8 @@ li.graph .center_poll {
   border-color: rgba(0, 0, 0, 0.95);
   border-width: 1px;
   color: #9A9A9A;
-  -webkit-box-shadow: 0px 2px 3px black;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 3px black;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .tooltipster-default .tooltipster-content {
@@ -2334,7 +2123,7 @@ li.graph .center_poll {
 }
 
 .noty_message {
-  padding: 8px 10px 0px !important;
+  padding: 8px 10px 0 !important;
 }
 
 /* New user stuff */
@@ -2370,7 +2159,6 @@ li.graph .center_poll {
 #reportsv2 .box, #reports .box {
   margin-bottom: 10px;
   background-color: rgba(100, 100, 100, 0.15);
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   color: #9A9A9A;
 }
@@ -2378,19 +2166,16 @@ li.graph .center_poll {
 .snatches img {
   width: 15px;
   height: 15px;
-  background: url("https://redacted.ch/static/styles/postmod/images/snatched.png") no-repeat center;
 }
 
 .leechers img {
   width: 11px;
   height: 15px;
-  background: url("https://redacted.ch/static/styles/postmod/images/leechers.png") no-repeat center;
 }
 
 .seeders img {
   width: 11px;
   height: 15px;
-  background: url("https://redacted.ch/static/styles/postmod/images/seeders.png") no-repeat center;
 }
 
 /* Lightbox */
@@ -2461,10 +2246,6 @@ tr.group_torrent td.edition_info {
   background: #333333;
 }
 
-.news_post {
-  line-height: 1.5em;
-}
-
 .r00 {
   color: #A33A3A;
 }
@@ -2521,63 +2302,43 @@ tr.group_torrent td.edition_info {
   color: #418B00;
 }
 
-/*# sourceMappingURL=dark-mono-alt.css.map */
-
-
-
 /* CUSTO HDF */
 .legend, #shoutbox_wrap > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) {
   padding: 8px 10px !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(#191919));
-  background-image: -webkit-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -moz-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -o-linear-gradient(top, #1d1d1d, #191919);
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: bold;
-    }
-
-img[src*="https://hdf.world/static/common/kim01.jpg"] {
-	display:none;*
 }
 
 /* FOND POUR LES NEWS*/
 .box.pad, .contentlayout>tbody, #content > table:nth-child(3) > tbody:nth-child(1){
-  padding: 10px 10px 10px 20px;
-    margin-bottom: 10px !important;
-    padding: 10px !important;
-    background-color: rgba(100,100,100,0.15);
-    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    color: #9A9A9A;
+  margin-bottom: 10px !important;
+  padding: 10px !important;
+  background-color: rgba(100,100,100,0.15);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  color: #9A9A9A;
 }
 
 #reply_box>.box.pad{
   background-color: transparent!important;
-  -webkit-box-shadow:none!important;
   box-shadow:none!important;
 }
 
-.head2{
-  margin-left: 0px;
-    width: 680px;
+.user_online>table>tbody{
+  background-color: rgba(100,100,100,0.15);
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  color: #9A9A9A;
 }
 
-.user_online>table>tbody{
-    background-color: rgba(100,100,100,0.15);
-    -webkit-box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-    color: #9A9A9A;
-    }
-
 .user_online>table{
-        margin-bottom: 10px;
-    margin-top: -10px;}
-
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
 
 /* SHOUTBOX */
+
 #shout {
-display: none!important;
+  display: none!important;
 }
 .shoutbox_messageboxback {
   background-color: transparent!important;
@@ -2586,110 +2347,86 @@ display: none!important;
   padding: 10px!important;
 }
 .shoutbox>table>tbody>tr>td {
-    padding: 5px;
+  padding: 5px;
 }
 .shoutbox_alt,.shoutbox_noalt  {
-background: rgba(221, 221, 221, .075) !important;
+  background: rgba(221, 221, 221, .075) !important;
 }
+
+.shoutbox table tbody tr td select{
+  width: fit-content;
+}
+
 #message {
-    padding: 5px;
-    width: 99%;
-    background: rgba(221, 221, 221, .075) !important;
-    border-radius: 3px;
-    border: 1px solid rgba(105, 105, 105, 1);
-    font-size: 11px;
-    color: #aaa;
-    -webkit-background-clip: padding-box;
+  padding: 5px;
+  width: 99%;
+  background: rgba(221, 221, 221, .075) !important;
+  border-radius: 3px;
+  border: 1px solid rgba(105, 105, 105, 1);
+  font-size: 11px;
+  color: #aaa;
+  -webkit-background-clip: padding-box;
 }
 img [title="Editer"] {
   display: none;
-  /*background-image: url('./img/edit.png');*/
 }
+
 /*FIN SHOUTBOX*/
 
 #cast > tbody > tr > td > a {
   display: block;
 }
 
-/*WYSIWYG*/
-
-
+/* WysiBB Editor - Neutral Theme */
 .wysibb {
-  background: rgba(0, 0, 0, 0.15)!important;
-  max-width: 100%;
-  border: 1px solid #3B3B3B!important;
+  background: linear-gradient(180deg, #2a2e3a 0%, #313541 100%);
+  border: 1px solid rgba(79, 209, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+  transition: all 0.25s ease;
 }
 
-.wysibb-toolbar-container{
-  border-right: 1px solid #3B3B3B!important;
-}
-.wysibb-toolbar{
-  border-bottom: 1px solid #3B3B3B!important;
-}
-.btn-inner,
-.fonticon {
-  color: #aaa!important;
-  text-shadow: none!important;
-}
 .wysibb-toolbar-btn:hover {
-  background: rgba(221, 221, 221, .075) !important;
-}
-.wbb-list {
-  background: #363636!important;
-}
-.wysibb-toolbar {
-  max-height: 100px!important;
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(79, 209, 255, 0.4);
+  transform: translateY(-1px);
 }
 
-form[name="staff_message"] > #textarea_wrap_0 > div > div.wysibb-text > div,
-form[name="staff_message"] > #textarea_wrap_0 > div{
-	min-height: 150px!important;
-
-}
-
-/*SHOUTBOX*/
-#shoutbox_contain > table > tbody > tr > td > div > div > img{
-  width:76px;
+.wysibb-text-editor {
+  background: #2d2d2d;
+  color: #aaa;
+  padding: 15px;
+  min-height: 200px;
+  line-height: 1.5;
+  border-radius: 0 0 8px 8px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  text-shadow: 0 0 transparent;
 }
 
 #torrent_table > tbody > tr > td.big_info > div.group_info.clear > img {
   border: none!important;
 }
 
-/* HIDE BOX ON HOME*/
-/*#content > div > div.sidebar > div:nth-child(1) {
-  display: none;
-}*/
-
-/*POPUP EDITION SHOUTBOX*/
+/* POPUP EDITION SHOUTBOX */
 .simplemodal-container{
-      background-color: #222!important;
+  background-color: #222!important;
 }
 .label {
-    color: #9A9A9A!important;
+  color: #9A9A9A!important;
 }
 #login > p{
   color: #9A9A9A!important;
 }
 
-img[src*="https://hdf.world/image.php?c=1&i=https%3A%2F%2Fhdf.world%2Fstatic%2Fcommon%2FHDFemme.jpg"], img[src*="https://hdf.world/static/common/HDFemme.jpg"], img[src*="https://hdf.world/static/common/HDFemme.jp"], img[src*="https://hdf.world/static/common/ClaraM1.jpg"], img[src*="https://hdf.world/static/common/ClaraM1.jp"], img[src*="https://hdf.world/static/common/ClaraM2.jpg"], img[src*="https://hdf.world/static/common/ClaraM2.jp"], img[src*="https://hdf.world/static/common/ClaraM3.jpg"], img[src*="https://hdf.world/static/common/ClaraM3.jp"], img[src*="https://hdf.world/static/common/ClaraM4.jpg"], img[src*="https://hdf.world/static/common/ClaraM4.jp"] {
-  display: none;
-}
-
-
 .box_addtorrent {
   display: grid;
 }
 
-/* DROPDOWN
-select#format,select#categories, select#bitrate, select.ft_format, select.ft_media, select.ft_releasetype, select.ft_haslog, select.ft_hascue, select.ft_scene, select.ft_vanityhouse, option[value="MOVIE"], option[value="MUSIC"], option[value="GAME"], option[value="ANIME"], option[value="TV"], option[value="EBOOKS"], #unit>*, #genrestypes>*, #genreslist>*, select[name="level"]>*, select[name="croisement"]>*, .bb_icon>*, #groupe>*, .ft_order_by>*, .ft_order_way>*, #postsperpage>*, #disableavatars>*, #pushservice>*,#pushdevice>*, #content > div > form > table > tbody > tr:nth-child(2) > td:nth-child(2) > select, select.ft_freetorrent, select#cert, select#stylesheet, select#collagecovers, #tor_autocomp_tr > td:nth-child(2) > select{
-  background: #222;
-}*/
-/*********************** Dropdowns ***********************/
 select {
   color: #9A9A9A;
-  padding: 3px;
-  padding-right: 30px;
+  padding: 3px 30px 3px 3px;
   -webkit-appearance: none;
   -moz-appearance: none;
   background-color: #292929;
@@ -2697,96 +2434,29 @@ select {
   background-position: calc(100% - 13px) calc(0.7em + 1px), calc(100% - 8px) calc(0.7em + 1px), calc(100% - .4em) .4em;
   background-size: 5px 5px, 5px 5px, 1.2em 1.2em;
   background-repeat: no-repeat;
-  box-shadow: inset 0 1.5px 4px rgba(0, 0, 0, 0.24), inset 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.24), inset 0 2px 6px rgba(0, 0, 0, 0.12);
   border: 1px solid #3B3B3B;
-  width: 100;
+  width: 100%;
   overflow: auto;
 }
 select:hover {
   background-color: #272727;
   transition: .25s ease-in-out;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
 }
 select > optgroup {
   background-color: rgb(34, 34, 34);
 }
 /* FIN DROPDOWN */
 
-/*AFFICHAGE CATEGORIES SUR LA PAGE D'ACCUEIL*/
-
-
-.cats_col{
-	display: table-cell;
+/*DETAILS TORRENTS, MASQUAGE HOVER TORRENT VALIDE*/
+.torrent_table tr.torrent_row:hover img {
+  border: none!important;
 }
-.cats_film{
-  background-image: url("https://i.imgur.com/VBgoraY.png");
-  width: 25px;
-  height: 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  }
-
-.cats_documentaire {
-  background-image: url("https://i.imgur.com/ATndsh0.png");
-  width: 25px;
-  height: 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  }
-
-  .cats_concert{
-    background-image: url("https://i.imgur.com/GDN2aSQ.png");
-    width: 25px;
-    height: 25px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    }
-
-
-
-.cats_sérieanim, .cats_série, .cats_anim{
-  background-image: url("https://i.imgur.com/Xxdd5C1.png");
-  width: 25px;
-  height: 25px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  }
-
-  .cats_dessinanimé {
-    background-image: url("https://i.imgur.com/j5AjuE1.png");
-    width: 25px;
-    height: 25px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    }
-
-
-
-  /*DETAILS TORRENTS, MASQUAGE HOVER TORRENT VALIDE*/
-  .torrent_table tr.torrent_row:hover img {
-    border: none!important;
-  }
 
 /*AFFICHAGE DETAILS ACTEURS*/
 .group_info.clear{
   display: block!important;
 }
-
-#discog_table > strong {
-  display: block;
-}
-
-#discog_table > span{
-  display: block;
-}
-
-#discog_table > a {
-  display: inline-block;
-}
-
-
 
 /*TABLEAU TORRENTS*/
 table.layout:nth-child(2) > tbody:nth-child(1) > tr:nth-child(1) > td > label{
@@ -2802,241 +2472,129 @@ div.group_info.clear > a , div.group_info.clear > .tags > a {
 }
 
 /*MODIFICATION DE LA COULEUR DES TEXTES*/
-span[style*="color: #00ff00;"], span[style*="color: #000000;"], span[style*="color: #274e13;"]  {
-  color: rgb(54, 153, 0)!important;
 
+font[color*="blue"],
+font[color*="#0000ff"]{
+  color: #4B6AB3!important;
 }
 
-span[style*="color: #980000;"], span[style*="color: #ff0000;"] {
+*[style*="color: blue"],
+*[style*="color: #0000ff"]{
+  color: #4B6AB3!important;
+}
+
+font[color*="red"]{
   color: rgb(163, 58, 58)!important;
-  }
-
-  b[style*="color: blue;"], span[style*="color: #0000ff;"]{
-    color: #4B6AB3!important;
-  }
-  a[style*="color: blue;"]{
-    color: #456478!important;
-  }
-
-  b[style*="color: red;"]{
-    color: rgb(163, 58, 58)!important;
-  }
-  a[style*="color: red;"]{
-    color: rgb(163, 58, 58)!important;
-  }
-
-
-
-  span[style*="color: red;"],   p[style*="color: red;"] {
-    color: rgb(163, 58, 58)!important;
-  }
-
-  font[color*="green"]{
-    color: #40883B!important;
-  }
-
-  a[style*="color: LimeGreen"], p[style*="color: LawnGreen"]{
-    color: #40883B!important;
-  }
-
-  font[color*="red"]{
-    color: rgb(163, 58, 58)!important;
-  }
-
-
-/*
-  #torrent11844 > td:nth-child(1) > span:nth-child(1) > img:nth-child(1){
-    height: 1px;
-    width: 1px;
-  }
-  #torrent11844 > td:nth-child(1) > span:nth-child(1) > img::before{
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin-right: 1px;
-  content: "";
-background:url(http://vision.gel.ulaval.ca/~jflalonde/cours/4105/h15/tps/results/tp2/SEBEL83/images/lamb.jpg) no-repeat 0 0;
-background-size: 100%;
 }
-*/
+
+*[style*="color: #980000"],
+*[style*="color: #ff0000"],
+*[style*="color: red"]{
+  color: rgb(163, 58, 58)!important;
+}
+
+span[style*="color: #00ff00"],
+span[style*="color: #000000"],
+span[style*="color: #274e13"]  {
+  color: #40883B!important;
+}
+
+font[color*="green"],
+font[color*="LimeGreen"]{
+  color: #40883B!important;
+}
+
+*[style*="color: green"],
+*[style*="color: LimeGreen"]{
+  color: #40883B!important;
+}
+
+*[style*="color: #FFD700"]{
+  color: rgba(255, 215, 0, 0.75) !important;
+}
 
 html body#chat div#wrapper div#content div.head.center {
-	margin: 20px;
+  margin: 20px;
   background:none!important;
 }
 #sortable{
   display: table;
 }
 .sortable_item {
-display: table}
+  display: table
+}
 
 /*AFFICHAGE HEAD POUR LA FICHE TORRENT*/
 #content > div.thin > div.main_column > table.contentlayout > tbody > tr:nth-child(1) > td > h2{
   margin: -10px;
   padding: 8px 10px !important;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d1d), to(#191919));
-  background-image: -webkit-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -moz-linear-gradient(top, #1d1d1d, #191919);
-  background-image: -o-linear-gradient(top, #1d1d1d, #191919);
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 
-
-
-  #torrent11844 > td:nth-child(1) > span:nth-child(1) > img:nth-child(1){
-    height: 1px;
-    width: 1px;
-  }
-  #torrent11844 > td:nth-child(1) > span:nth-child(1) > img::before{
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  margin-right: 1px;
-  content: "";
-background:url(http://vision.gel.ulaval.ca/~jflalonde/cours/4105/h15/tps/results/tp2/SEBEL83/images/lamb.jpg) no-repeat 0 0;
-background-size: 100%;
+.edition_info {
+  color: #9A9A9A;
 }
 
-
-.create_form td label {
-  /*width: 166px;*/
-  display: inline-block;
-  padding-left: 5px;
+.news_header a {
+  color: rgb(163, 58, 58)!important;
 }
 
-.create_form textarea, html body#user div#wrapper div#content div.thin form#filter_form.create_form table.layout tbody tr td input.required {
-  width: 97%!important;
+/* Layout (Torrents page) */
+
+/* Base styles pour les liens show/hide */
+.hide_torrents_link,
+.show_torrents_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 25px;
+  font-size: 14px;
+  color: #9A9A9A;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  text-shadow: 0 0 transparent;
 }
 
-.search_form label[for*="newgroupsonly_"]{
-  width: 220px!important;
-  display: inline-block;
-  padding-left: 4px;
-  }
-
-  #forum_search_cat_list td {
-    display: inline-block;
-  }
-
-.search_form td label {
-  width: 155px;
-  /*display: inline-block;*/
-  padding-left: 4px;
+/* Style pour l'état show (flèche vers la droite) */
+.show_torrents_link {
+  position: relative;
 }
 
-.search_form[name*="requests"] td label {
-  width: 146px;
-  display: inline-block;
-  padding-left: 4px;
+.show_torrents_link:after {
+  content: "▶";
+  display: block;
 }
 
-
-[input^="forum_"] {
-  display: inline-block;
+/* Style pour l'état hide (flèche vers le bas) */
+.hide_torrents_link {
+  position: relative;
 }
 
-.create_form label[for*="newgroupsonly_"]{
-width: 600px;
+.hide_torrents_link:after {
+  content: "▼";
+  display: block;
 }
 
-#torrent_table > tbody > tr.colhead > td:nth-child(3){
-  width: 1000px;
+/* Hover effects */
+.hide_torrents_link:hover,
+.show_torrents_link:hover {
+  color: #333333;
 }
 
-.group_torrent > td:nth-child(2) {
-  text-align: right!important;
+/* Support pour les anciennes classes tout en utilisant les nouvelles flèches */
+.show_torrents > a:after {
+  content: "▶";
+}
+.hide_torrents > a:after {
+  content: "▼";
 }
 
-div.hidden {
-  display: none;
+.team_name {
+  background-color: rgba(100, 100, 100, 0.15);
+  color: #a8a8a8;
+  padding: 2px;
+  float: none !important;
 }
-
-html body#torrents div#wrapper div#content div.thin div form.search_form table.layout tbody tr td label {
-  width: auto!important;
-}
-
-/*.header img {
-  display: inline;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: url(https://images.vexels.com/media/users/3/131979/isolated/preview/738e536059f8ca89ae33a97f0edca2ff-rss-feed-icon-by-vexels.png) no-repeat;
-  width: 20px;
-  height: 20px;
-  padding-left: 20px;
-  }*/
-
-  /* SEARCH FORUM*/
-  #forum_search_cat_list label{
-    width: 250px;
-    display: inline-block;
-  }
-
-  #content > div.thin > p, td.label{
-    margin-bottom: 0px!important;
-  }
-
-  #content > div > div.sidebar > div:nth-child(1){
-  background-color: #222!important;
-  -webkit-box-shadow: none!important;
-  box-shadow: none!important;
-  }
-
-  /*MODIFICATION AJOUT FORMAT*/
-  #VF_Version > td:nth-child(2) > span:nth-child(27){
-  	max-width: 71%;
-  		margin-left: 0px!important;
-  }
-
-  #VF_Version > td:nth-child(2) > span {
-  	margin-left: 5px;
-  }
-
-    /* Points*/
-    #content > div > div.sidebar > div.box.point_gift_box > div.pad > form > div > input[type="text"], #content > div > div.sidebar > div.box.point_gift_box > div.pad > form > textarea{
-      margin-bottom: 5px;
-      margin-top: 5px;
-      width: 90%;
-    }
-
-marquee {
-	    background-color: rgba(0, 0, 0, 0)!important;
-    width: 100%!important;
-    margin-top: 15px!important;
-}
-
-//correction de l'affichage des résumés
-#content > div.thin > div.main_column > div.box.torrent_description > div.body > span {
-	color:white!important!
-}
-
-
-/*CORRECTION BR WYSIWYG*/
-.wysibb-text-editor > *
-{
-	display:initial!important;
-	opacity:unset!important;
-}
-
-/*Correction de l'affichage des légendes sur la page des torrents*/
-#content > div.widethin > div:nth-child(3){
-padding: 10px 10px 10px 20px!important;
-}
-#content > div > div:nth-child(2) {
-padding: 20px 10px 10px 20px!important;
-}
-
-#torrents > div > #content > div.thin > div.main_column, #content > div > div.main_column
-{
-	width: 700px!important;
-}
-
-/*Suppression background et décalage alertes sur la home*/
-#searchbars > ul > div {
-margin-bottom: -10px;
-margin-top: 5px;
-background: none;
-padding: 0px!important;
-}
-	
