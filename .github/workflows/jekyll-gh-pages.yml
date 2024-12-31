@@ -33,6 +33,7 @@ jobs:
           node-version: 18
       - run: npm install -g less
       - run: lessc ./themes/carbone/style.less ./themes/carbone/style.css
+      - run: lessc ./themes/carbone/style-expert.less ./themes/carbone/style-expert.css
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
