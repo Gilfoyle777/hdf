@@ -1,0 +1,75 @@
+﻿@import "common";
+
+@searchbars-margin-left: 50px;
+@searchbars-margin-right: 5px;
+
+#searchbars {
+  position: absolute;
+  top: 125px;
+  margin: 0;
+  padding: 12px 5px;
+  width: 100%;
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+#searchbars ul li {
+  display: inline-block;
+  margin-right: @searchbars-margin-right;
+}
+
+#searchbars ul, #searchbars form {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+#searchbars input {
+  padding: 5px 10px;
+  width: 140px;
+  height: 15px;
+  border: 1px solid #3B3B3B;
+  background: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  color: #666;
+  transition: @default-transition;
+  -webkit-transition: @default-transition;
+  -moz-transition: @default-transition;
+  -o-transition: @default-transition;
+}
+
+#searchbars a {
+  transition: @default-transition;
+  -webkit-transition: @default-transition;
+  -moz-transition: @default-transition;
+  -o-transition: @default-transition;
+}
+
+#searchbars {
+  display: inline;
+  line-height: 14px;
+}
+
+#searchbars li {
+  margin-right: @searchbars-margin-right;
+}
+
+#searchbars input {
+  box-sizing: content-box;
+}
+
+@media only screen and (max-width: 1032px) {
+  #searchbars {
+    text-align: left;
+  }
+
+  #searchbars li:first-child {
+    margin-left: @searchbars-margin-left;
+  }
+
+  #searchbars li:last-child {
+    padding-top: 8px;
+    margin-left: @searchbars-margin-left;
+  }
+}

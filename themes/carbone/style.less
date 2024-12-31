@@ -18,6 +18,7 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 
+@import "common";
 @import "colors-definition";
 
 * {
@@ -194,7 +195,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #collage_table td img:hover {
   border: 2px solid #5fa296;
   opacity: 1;
-  transition: opacity .25s ease-in-out;
+  transition: opacity @default-transition;
 }
 
 #collage .search_form .layout.border tr:nth-child(3) td:nth-child(2) label, tr#release_list td label, tr#format_list td label, tr#bitrate_list td label, tr#media_list td label {
@@ -269,7 +270,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #coverart.box ul.collage_images img:hover, .group_image.float_left.clear img:hover, .gm_albumartdisplay img:hover, #collage_table td img:hover, #userhistory .torrent_table.grouped.artwork tr.group.discog td[style="width: 60px; padding: 0;"] img:hover, #user .layout.recent a > img:hover {
   border: 2px solid #528BA3 !important;
   opacity: 1 !important;
-  transition: opacity .25s ease-in-out;
+  transition: opacity @default-transition;
   padding: 0!important;
 }
 
@@ -486,9 +487,9 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #index .sidebar a > img[width="100%"]:hover, #artist .sidebar div img:hover, .box.box_albumart img:hover {
   border: 2px solid #456478 !important;
   opacity: 0.6;
-  -webkit-transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity @default-transition;
+  -moz-transition: opacity @default-transition;
+  transition: opacity @default-transition;
 }
 
 #inbox #quickpost input[type="text"], #staffpm .send_form input#subject, #staff .send_form input#subject, #artist .edit_form input[size="92"], #artist .rename_form input[name="name"], #artist .add_form input[size="40"], #torrents .rename_form input[size="92"], #torrents .merge_form input[name="targetgroupid"], .box.pad .edit_form input[size="92"] {
@@ -613,19 +614,6 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   vertical-align: middle;
 }
 
-/*
-#nav_useredit, #nav_logout, #nav_invite, #nav_donate, #nav_store {
-    opacity: 0;
-    transition: opacity .25s ease-in-out;
-    -webkit-transition: opacity .25s ease-in-out;
-    -moz-transition: opacity .25s ease-in-out;
-    -o-transition: opacity .25s ease-in-out;
-}
-
-#userinfo_username:hover #nav_useredit, #userinfo_username:hover #nav_logout, #userinfo_major:hover #nav_invite, #userinfo_major:hover #nav_donate, #userinfo_major:hover #nav_store {
-    opacity: 1;
-}
-*/
 #other_bitrate_span input#vbr {
   top: 3px;
 }
@@ -721,44 +709,8 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   list-style: none;
 }
 
-#searchbars {
-  position: absolute;
-  top: 125px;
-  margin: 0;
-  padding: 12px 5px;
-  width: 100%;
-  height: 28px;
-  text-align: center;
-}
-
-#searchbars ul li {
-  display: inline-block;
-  margin-right: 5px;
-}
-
-#searchbars li:last-child, #userinfo_stats li:last-child {
+#userinfo_stats li:last-child {
   margin-right: 0;
-}
-
-#searchbars ul, #searchbars form {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-#searchbars input {
-  padding: 5px 10px;
-  width: 140px;
-  height: 15px;
-  border: 1px solid #3B3B3B;
-  background: rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
-  color: #666;
-  transition: .25s ease-in-out;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
 }
 
 #site_debug .debug_table .debug_data > div, #site_debug .debug_table .debug_data > pre {
@@ -925,17 +877,14 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   margin-bottom: 0;
 }
 
-#userinfo a, #menu a, #searchbars a {
-  transition: .25s ease-in-out;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
+#userinfo a, #menu a {
+  transition: @default-transition;
+  -webkit-transition: @default-transition;
+  -moz-transition: @default-transition;
+  -o-transition: @default-transition;
 }
 
 #userinfo {
-  //overflow: hidden;
-  //width: 100%;
-
   position: absolute;
   top: -5px;
   width: 100%;
@@ -956,7 +905,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   width: 50%;
 }
 
-#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li, #searchbars, #menu li {
+#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li, #menu li {
   display: inline;
   line-height: 14px;
 }
@@ -980,7 +929,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   width: 50%;
 }
 
-#userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #searchbars li, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
+#userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
   margin-right: 5px;
 }
 
@@ -1273,10 +1222,10 @@ input[type="text"], input[type="search"], input[type="password"], input[type="em
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
   color: @color-9A9A9A;
-  transition: .25s ease-in-out;
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
+  transition: @default-transition;
+  -webkit-transition: @default-transition;
+  -moz-transition: @default-transition;
+  -o-transition: @default-transition;
 }
 
 input[type="checkbox"] {
@@ -1369,7 +1318,7 @@ input[type="submit"]:active, input[type="button"]:active, button[type="button"]:
 input:focus, textarea:focus {
   outline: 0 !important;
   border: 1px solid #456478 !important;
-  transition: .25s ease-in-out;
+  transition: @default-transition;
 }
 
 input[value="Make Default"] {
@@ -2053,7 +2002,7 @@ li.graph .center_poll {
 .preview_image:hover {
   border: 2px solid #528BA3;
   opacity: 1;
-  transition: opacity .25s ease-in-out;
+  transition: opacity @default-transition;
 }
 
 /* Tooltips */
@@ -2183,10 +2132,6 @@ li.graph .center_poll {
   max-width: 490px;
 }
 
-#searchbars input {
-  box-sizing: content-box;
-}
-
 tr.group {
   background: #1c1c1c;
 }
@@ -2313,7 +2258,7 @@ select {
 }
 select:hover {
   background-color: #272727;
-  transition: .25s ease-in-out;
+  transition: @default-transition;
 }
 select > optgroup {
   background-color: rgb(34, 34, 34);
@@ -2378,3 +2323,5 @@ html body#chat div#wrapper div#content div.head.center {
 
 @import "layout-torrents";
 @import "layout-shoutbox";
+
+@import "searchbars";
