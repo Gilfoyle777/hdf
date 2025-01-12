@@ -251,7 +251,16 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #content .sidebar {
   float: right;
-  width: 258px !important;
+  width: @sidebar-width !important;
+}
+
+ // torrent layout header
+.header h2 {
+  display: none;
+}
+
+.stats strong {
+  color: @color-9A9A9A;
 }
 
 #coverart.box ul.collage_images img {
@@ -1357,7 +1366,7 @@ tr:first-child td {
 }
 
 td {
-  padding: 7px;
+  padding: @td-padding;
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: left;
 }
@@ -1675,15 +1684,30 @@ li.graph .center_poll {
 .ft_year input, .ft_remasteryear input, #year_tr input, #edition_year input {
   width: 75px;
 }
+//
+//.head, .colhead td, .colhead th, .recent .colhead td, .colhead_dark td, tr.colhead{
+//  margin: -10px -10px 10px;
+//  padding: 8px 10px !important;
+//  background-image: linear-gradient(to bottom, #1d1d1d, #191919);
+//  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
+//  font-weight: bold;
+//}
 
-.head, .colhead td, .colhead th, .recent .colhead td, .colhead_dark td, tr.colhead{
-  margin: -10px -10px 10px;
+.head, .colhead, .colhead_dark {
+ // margin: -10px -10px 10px;
   padding: 8px 10px !important;
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: bold;
 }
 
+.box .head {
+  margin: -10px -10px 10px;
+  padding: 8px 10px !important;
+  background-image: linear-gradient(to bottom, #1d1d1d, #191919);
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
 
 .important_user, .sticky_post {
   border: 1px solid #3b3b3b;
@@ -1718,7 +1742,8 @@ li.graph .center_poll {
 
 .linkbox, .notify_filter_links {
   margin-bottom: 10px;
-  text-align: center;
+  text-align: right;
+  margin-right: @sidebar-width + @margin-default;
   text-transform: capitalize;
 }
 
@@ -2305,7 +2330,7 @@ html body#chat div#wrapper div#content div.head.center {
 
 /*AFFICHAGE HEAD POUR LA FICHE TORRENT*/
 #content > div.thin > div.main_column > table.contentlayout > tbody > tr:nth-child(1) > td > h2{
-  margin: -10px;
+  margin: -@td-padding;
   padding: 8px 10px !important;
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
