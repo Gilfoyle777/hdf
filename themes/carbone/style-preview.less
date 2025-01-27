@@ -233,7 +233,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #content {
   overflow: hidden;
-  margin: 150px auto 0 !important;
+  margin: 120px auto 0 !important;
   width: 1000px;
   line-height: 1.4em;
 }
@@ -244,7 +244,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #content, .thin {
-  padding-top: 20px;
+/*  padding-top: 20px; */
   clear: both;
   overflow: hidden;
 }
@@ -341,7 +341,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #extra2 {
   position: absolute;
   top: 0;
-  margin: 100px 0 0;
+  margin: 84px 0 0;
   width: 100%;
   height: 75px;
   background-color: #2e2e2e;
@@ -572,7 +572,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #menu {
   position: absolute;
-  top: 95px;
+  top: 75px;
   //  right: 0;
   width: 100%;
   //  height: 45px;
@@ -586,19 +586,27 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #menu .active a {
-  color: #F9A440;
+  color: #F9A440 !important;
 }
 
 #menu .active a:hover {
-  color: #aaa;
+  color: #aaa !important;
 }
 
 #menu ul {
-  padding: 15px 0 0 50px;
+  //padding: 15px 0 0 50px;
+  top: 16px;
+  position: relative;
 }
 
 #menu ul li:last-child {
-  margin-right: 55px;
+ // margin-right: 55px;
+}
+
+
+#menu li {
+  display: inline-block;
+  width: 7%;
 }
 
 #menu li:first-child, #inbox .manage_form .layout td.center, .search_form .layout tr:last-child td.center, .debug_table td.debug_data, .drag_drop_save {
@@ -906,7 +914,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 
 #userinfo_username {
   position: absolute;
-  top: 20px;
+  top: -6px;
   right: 50px;
   //margin: 20px 60px 0 0;
   height: 1.5em !important;
@@ -915,7 +923,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   width: 50%;
 }
 
-#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li, #menu li {
+#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li {
   display: inline;
   line-height: 14px;
 }
@@ -925,11 +933,9 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 }
 
 #userinfo_major {
-  //position: absolute;
-  //width: 50%;
-  //margin: 105px 0 0 50px;
-  left: 48px;
-  top: 80px;
+  text-align: right;
+  top: 25px;
+  right: 68px;
 }
 
 #userinfo_stats {
@@ -939,8 +945,8 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   // font-size: 12px;
   width: 50%;
 
-  left: 50px;
-  top: 60px;
+  left: 190px;
+  top: 13px;
 }
 
 #userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
@@ -950,11 +956,10 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 #userinfo_minor {
   position: absolute;
   width: 48%;
-  top: 60px;
-  right: 50px;
-  //margin: 60px 55px 0 0;
+  right: 0;
+  margin: 60px 55px 0 0;
   text-align: right;
-  //float: right;
+  float: right;
 }
 
 #userinfo_minor li {
