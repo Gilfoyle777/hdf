@@ -233,7 +233,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #content {
   overflow: hidden;
-  margin: 150px auto 0 !important;
+  margin: 120px auto 0 !important;
   width: 1000px;
   line-height: 1.4em;
 }
@@ -244,7 +244,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #content, .thin {
-  padding-top: 20px;
+  /*  padding-top: 20px; */
   clear: both;
   overflow: hidden;
 }
@@ -254,7 +254,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   width: @sidebar-width !important;
 }
 
- // torrent layout header
+// torrent layout header
 .header h2 {
   display: none;
 }
@@ -341,9 +341,9 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #extra2 {
   position: absolute;
   top: 0;
-  margin: 125px 0 0;
+  margin: 84px 0 0;
   width: 100%;
-  height: 50px;
+  height: 75px;
   background-color: #2e2e2e;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -572,11 +572,11 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #menu {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 75px;
+  //  right: 0;
   width: 100%;
-  height: 45px;
-  text-align: right;
+  //  height: 45px;
+  text-align: center;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: normal;
 }
@@ -586,19 +586,27 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #menu .active a {
-  color: #F9A440;
+  color: #F9A440 !important;
 }
 
 #menu .active a:hover {
-  color: #aaa;
+  color: #aaa !important;
 }
 
 #menu ul {
-  padding: 15px 0 0 50px;
+  //padding: 15px 0 0 50px;
+  top: 16px;
+  position: relative;
 }
 
 #menu ul li:last-child {
-  margin-right: 55px;
+  // margin-right: 55px;
+}
+
+
+#menu li {
+  display: inline-block;
+  width: 7%;
 }
 
 #menu li:first-child, #inbox .manage_form .layout td.center, .search_form .layout tr:last-child td.center, .debug_table td.debug_data, .drag_drop_save {
@@ -906,15 +914,16 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 
 #userinfo_username {
   position: absolute;
-  left: 0;
-  margin: 40px 0 0 50px;
-  height: 1.5em !important;
-  text-align: left;
+  top: -6px;
+  right: 50px;
+  //margin: 20px 60px 0 0;
+  //height: 1.5em !important;
+  text-align: right;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   width: 50%;
 }
 
-#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li, #menu li {
+#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li {
   display: inline;
   line-height: 14px;
 }
@@ -924,18 +933,20 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 }
 
 #userinfo_major {
-  position: absolute;
-  width: 50%;
-  margin: 107px 0 0 50px;
-  left: 0;
+  text-align: right;
+  top: 25px;
+  right: 50px;
 }
 
 #userinfo_stats {
-  margin: 76px 0 0 50px;
+  //margin: 85px 0 0 50px;
   position: absolute;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
-  font-size: 12px;
+  // font-size: 12px;
   width: 50%;
+
+  left: 190px;
+  top: 13px;
 }
 
 #userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
@@ -943,26 +954,27 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 }
 
 #userinfo_minor {
-  position: absolute;
-  width: 48%;
-  right: 0;
-  margin: 60px 55px 0 0;
-  text-align: right;
-  float: right;
+  width: 100%;
+  text-align: center;
+  top: 60px;
+  display: inline-block;
 }
 
 #userinfo_minor li {
-  padding-right: 0;
+  padding-right: 2px;
+  width: 9%;
+  display: inline-block;
 }
 
 #userinfo_minor li:last-child{
   margin-right: 0;
   padding-right: 0;
+  display: none;
 }
 
-#userinfo_minor li, #userinfo_major li {
-  padding-right: 5px;
-}
+//#userinfo_major li {
+//  padding-right: 5px;
+//}
 
 #userinfo_major li:last-child, #userinfo_username li:last-child {
   padding-right: 0;
@@ -982,6 +994,24 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 #userinfo_minor a:hover, #userinfo_major a:hover, #userinfo_username a:hover {
   color: #444;
 }
+//
+//#nav_logout, #nav_useredit, #nav_userinfo, #nav_upload, #nav_invite, #nav_donate {
+//  min-width: 100px;
+//  text-align: center;
+//}
+//
+//#nav_userinfo, #nav_upload {
+//  text-align: left;
+//  min-width: 70px;
+//}
+//
+//#nav_logout, #nav_donate {
+//  text-align: right;
+//}
+//
+//#nav_userclass{
+//  display: none !important;
+//}
 
 #user #content > .thin.center > .box form input[maxlength="100"] {
   width: 600px;
@@ -1694,7 +1724,7 @@ li.graph .center_poll {
 //}
 
 .head, .colhead, .colhead_dark {
- // margin: -10px -10px 10px;
+  // margin: -10px -10px 10px;
   padding: 8px 10px !important;
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
@@ -2353,4 +2383,5 @@ html body#chat div#wrapper div#content div.head.center {
 @import "layout-shoutbox";
 
 @import "searchbars";
+@import "searchbars2";
 @import "notifications";
