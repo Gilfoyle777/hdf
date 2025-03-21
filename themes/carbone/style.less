@@ -146,7 +146,8 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 #alerts {
   position: absolute;
   top: 14px;
-  left: 80px;
+  left: 480px;
+  right: 330px;
   text-align: center;
 }
 
@@ -921,7 +922,6 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   //height: 1.5em !important;
   text-align: right;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
-  width: 50%;
 }
 
 #userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li {
@@ -944,8 +944,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   position: absolute;
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   // font-size: 12px;
-  width: 50%;
-
+  width: 48%;
   left: 190px;
   top: 13px;
 }
@@ -1501,9 +1500,10 @@ li.graph .center_poll {
 .alertbar {
   padding: 0 5px;
 }
-.alertbar:last-child {
-  margin-right: 55px;
-}
+
+//.alertbar:last-child {
+//  margin-right: 55px;
+//}
 
 .alertbar a[href*="torrents.php?action=notify"]:before, .alertbar a[href*="inbox.php"]:before, .alertbar a[href*="index.php"]:before, .alertbar a[href*="userhistory.php?action=subscribed_collages"]:before, .alertbar a[href="userhistory.php?action=quote_notifications"]:before, .alertbar a[href*="blog.php"]:before {
   position: relative;
@@ -1945,7 +1945,7 @@ li.graph .center_poll {
   margin-left: 20px;
 }
 
-.torrent_table, .request_table, .filelist_table, .forum_index, .subscribed_collages_table, .forum_post.box, #alerts, .layout, .message_table, .collage_table, #wiki form[action="wiki.php"] table, #reports .thin table, #reportsv2 .thin table, .friends_table, #whmf_torrents, .vote_matches_table, .torrentdetails.pad div table, #dnulist, #torrents .thin .header + table, #whmf_torrents .border.slice, #upload_table.create_form .textarea_wrap textarea, #userform.edit_form textarea#info, .box_addartists.box_addartists_similar .add_form, #userhistory table, #top10 h3 + .border, #torrents .thin.center > .box[style="width: 600px; margin: 0px auto;"], #user #content > .thin.center > .box {
+.torrent_table, .request_table, .filelist_table, .forum_index, .subscribed_collages_table, .forum_post.box, .layout, .message_table, .collage_table, #wiki form[action="wiki.php"] table, #reports .thin table, #reportsv2 .thin table, .friends_table, #whmf_torrents, .vote_matches_table, .torrentdetails.pad div table, #dnulist, #torrents .thin .header + table, #whmf_torrents .border.slice, #upload_table.create_form .textarea_wrap textarea, #userform.edit_form textarea#info, .box_addartists.box_addartists_similar .add_form, #userhistory table, #top10 h3 + .border, #torrents .thin.center > .box[style="width: 600px; margin: 0px auto;"], #user #content > .thin.center > .box {
   width: 100% !important;
 }
 
