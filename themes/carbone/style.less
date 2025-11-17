@@ -235,7 +235,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #content {
   overflow: hidden;
-  margin: 120px auto 0 !important;
+  margin: 60px auto 0 !important;
   width: 1000px;
   line-height: 1.4em;
 }
@@ -246,7 +246,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 }
 
 #content, .thin {
-  /*  padding-top: 20px; */
+  padding-top: 12px;
   clear: both;
   overflow: hidden;
 }
@@ -258,7 +258,8 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 // torrent layout header
 .header h2 {
-  display: none;
+  //display: none;
+  margin-bottom: -25px;
 }
 
 .stats strong {
@@ -334,7 +335,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 45px;
+  height: 60px;
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   background: #191919;
@@ -574,7 +575,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #menu {
   position: absolute;
-  top: 75px;
+  top: 86px;
   //  right: 0;
   width: 100%;
   //  height: 45px;
@@ -597,7 +598,7 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #menu ul {
   //padding: 15px 0 0 50px;
-  top: 16px;
+  //top: 16px;
   position: relative;
 }
 
@@ -896,7 +897,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   margin-bottom: 0;
 }
 
-#userinfo a, #menu a {
+#userinfo a {
   transition: @default-transition;
   -webkit-transition: @default-transition;
   -moz-transition: @default-transition;
@@ -914,6 +915,10 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   padding: 0;
 }
 
+.user-avatar{
+  display: none;
+}
+
 #userinfo_username {
   position: absolute;
   top: -6px;
@@ -925,7 +930,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   z-index: 1000;
 }
 
-#userinfo_username li, #userinfo_stats li, #userinfo_minor li, #userinfo_major li {
+#userinfo_username li, #userinfo_stats li, .premenu-links-group li, #userinfo_major li {
   display: inline;
   line-height: 14px;
 }
@@ -950,28 +955,222 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   top: 13px;
 }
 
-#userinfo_stats li, #userinfo_major li, #userinfo_username li, #userinfo_minor li:last-child, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
+#userinfo_stats li, #userinfo_major li, #userinfo_username li, .premenu-links-group li:last-child, #top10 input[name="year1"], #answer_block input:first-child, #user #content > .thin.center > .box form strong {
   margin-right: 5px;
 }
 
-#userinfo_minor {
-  width: 100%;
-  text-align: center;
-  top: 60px;
-  display: inline-block;
+.user-details{
+  left: 180px;
+  position: absolute;
 }
 
-#userinfo_minor li {
-  padding-right: 2px;
-  width: 9%;
-  display: inline-block;
+#userinfo_right{
+  position: absolute;
+  right: 50px;
 }
 
-#userinfo_minor li:last-child{
-  margin-right: 0;
-  padding-right: 0;
-  display: none;
+
+
+/* Userinfo Gauche */
+#userinfo_left .user-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
+
+#userinfo_left .user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#userinfo_left .user-name-class {
+  font-size: 1.1em;
+}
+
+#userinfo_left .user-name-class .userclass {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+#userinfo_left .user-stats-ratio,
+#userinfo_left .user-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9em;
+}
+
+#userinfo_left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#userinfo_left a:hover {
+  text-decoration: underline;
+}
+
+/* Userinfo Droite */
+#userinfo_right .user-stats-currency {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 0.9em;
+}
+
+#userinfo_right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#userinfo_right a:hover {
+  text-decoration: underline;
+}
+
+
+//
+//.premenu-links-group {
+//  width: 100%;
+//  text-align: center;
+//  //top: 60px;
+//  //display: inline-block;
+//}
+//
+//#premenu, #menu > ul {
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  flex-wrap: wrap;
+//  gap: 15px;
+//  list-style: none;
+//  padding: 5px 0;
+//  margin: 0;
+//}
+//
+//#premenu a {
+//  font-size: 0.90em;
+//  color: #a0a0a0;
+//  padding: 2px 4px;
+//  border-radius: 3px;
+//}
+//
+//.premenu-links-group {
+//  display: flex;
+//  align-items: center;
+//  flex-wrap: wrap;
+//  margin-bottom: 10px;
+//}
+//
+////.premenu-links-group a {
+////  padding-right: 2px;
+////  width: 9%;
+////  display: inline-block;
+////}
+//
+//.premenu-links-group a:last-child{
+//  margin-right: 0;
+//  padding-right: 0;
+//  display: none;
+//}
+
+
+
+/* --- Section Centrale : Menus de Navigation --- */
+
+/* Conteneurs de menu */
+#premenu, #menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+}
+
+/* Liens des menus */
+
+//#premenu a:hover, #menu a:hover {
+//  border-bottom-color: #EFB34A;
+//  color: #EFB34A;
+//}
+
+/* Menu principal actif */
+#nav_index.active a, #nav_torrents.active a, #nav_collages.active a, #nav_requests.active a,
+#nav_forums.active a, #nav_irc.active a, #nav_top10.active a, #nav_rules.active a,
+#nav_wiki.active a, #nav_staff.active a, #nav_reel.active a {
+  border-bottom-color: #FF0000;
+}
+#menu > ul > li {
+  margin: 0; /* Annule le margin par défaut des li */
+}
+
+@keyframes pulseNotification {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Assure que les liens ne sont pas coupés */
+#nav_inbox a, #nav_subscriptions a {
+  white-space: nowrap;
+}
+
+
+/* --- Style du Pré-Menu (#premenu) --- */
+
+#premenu {
+  //border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+  gap: 2px;
+}
+
+#premenu a {
+  font-size: 0.90em; /* Légèrement réduit */
+  //color: #a0a0a0; /* Plus discret */
+  padding: 2px 20px;
+  border-radius: 3px;
+}
+
+#premenu a:hover, #menu a:hover {
+  color: #EFB34A;
+  //background-color: rgba(239, 179, 74, 0.1);
+  //border-bottom-color: transparent;
+}
+
+/* Spécificités des liens du premenu */
+#premenu a.uploader { font-weight: bold; color: #FF8C00; }
+#premenu a.donation-link { color: LimeGreen !important; }
+
+/* Style pour les notifications actives */
+#premenu a.has-notification {
+  color: #ff5c00;
+  font-weight: bold;
+  animation: pulseNotification 1.8s infinite;
+}
+
+#premenu .notification-dot {
+  color: #ff5c00;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+@keyframes pulseNotification {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.premenu-links-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 54px;
+  margin-bottom: 10px;
+}
+
 
 //#userinfo_major li {
 //  padding-right: 5px;
@@ -981,7 +1180,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   padding-right: 0;
 }
 
-#userinfo_minor a, #userinfo_username a, #userinfo_major a, #menu a:hover, #userinfo_stats a:hover {
+.premenu-links-group a, #userinfo_username a, #userinfo_major a, #userinfo_stats a:hover {
   padding: 2px 0;
   color: #666;
 }
@@ -992,7 +1191,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
   font-size: 13px;
 }
 
-#userinfo_minor a:hover, #userinfo_major a:hover, #userinfo_username a:hover {
+.premenu-links-group a:hover, #userinfo_major a:hover, #userinfo_username a:hover {
   color: #444;
 }
 //
@@ -1140,7 +1339,6 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 }
 
 #wrapper {
-  overflow: hidden;
   margin: 0 auto;
   min-width: 1000px;
   width: 100%;
@@ -1781,6 +1979,12 @@ li.graph .center_poll {
 
 .linkbox a {
   padding: 0 2px;
+}
+
+
+.header > .linkbox {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 .brackets:before {
