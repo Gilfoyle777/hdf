@@ -58,6 +58,7 @@ li {
 
 a, .linkbox a:hover {
   color: #528ba3;
+//  color: grey;
   text-decoration: none;
 }
 
@@ -448,6 +449,10 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
   text-align: center;
 }
 
+#latest_forums {
+  margin-top: 10px;
+}
+
 #format-hide span {
   padding: 2px 2px;
   border: none !important;
@@ -485,6 +490,17 @@ h3#irc + .box.pad ul li:last-child, h3#general + .box.pad ul li:last-child {
 
 #index .graph .center_poll {
   margin-top: 0;
+}
+
+table tbody a, .main_column a, .sidebar a, .action_button {
+  color: grey;
+}
+
+.edition_info strong {
+  /* color: #4fd1ff; */
+  color: unset;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 #index .sidebar a > img[width="100%"], .box.box_albumart img, #artist .sidebar div img {
@@ -966,7 +982,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 
 #userinfo_right{
   position: absolute;
-  right: 50px;
+  right: 110px;
 }
 
 
@@ -1131,7 +1147,7 @@ blockquote.log_bad, #preview, #inbox #messageform.manage_form input[type="submit
 #premenu a {
   font-size: 0.90em; /* Légèrement réduit */
   //color: #a0a0a0; /* Plus discret */
-  padding: 2px 20px;
+  padding: 4px 20px;
   border-radius: 3px;
 }
 
@@ -1937,6 +1953,18 @@ li.graph .center_poll {
   background-image: linear-gradient(to bottom, #1d1d1d, #191919);
   text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.5);
   font-weight: bold;
+}
+
+.torrent-nav-btn {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.torrent-nav-btn:hover {
+  background: linear-gradient(135deg, #2a2a2c, #1a1a1c);
+  border-color: grey;
+  color: grey;
+ // box-shadow: 0 2px 8px grey;
 }
 
 .important_user, .sticky_post {
