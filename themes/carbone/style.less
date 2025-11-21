@@ -2613,6 +2613,50 @@ html body#chat div#wrapper div#content div.head.center {
   color: rgb(163, 58, 58)!important;
 }
 
+/* Menu déroulant Torrents */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(40, 40, 45, 0.98), rgba(30, 30, 35, 0.98));
+  border: 1px solid rgba(79, 209, 255, 0.2);
+  border-radius: 4px;
+  padding: 4px 0;
+  min-width: 90px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.nav-dropdown:hover .dropdown-submenu {
+  display: block;
+}
+
+.dropdown-submenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-submenu a {
+  display: block;
+  padding: 8px 15px;
+  color: #a0a0a0;
+  font-size: 0.90em;
+  transition: all 0.2s ease;
+}
+
+.dropdown-submenu a:hover {
+  background: rgba(79, 209, 255, 0.1);
+  color: #EFB34A;
+}
+
 @import "colors-overwrite";
 @import "rangs";
 @import "colors-ratio";
